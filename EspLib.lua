@@ -482,7 +482,9 @@ function espLibrary:Load(renderValue)
                 objects.top.Visible = show and self.options.names;
                 objects.top.Font = self.options.font;
                 objects.top.Size = self.options.fontSize;
-                objects.top.Outline = false
+                
+                    
+                    
                 objects.top.Transparency = self.options.nameTransparency;
                 objects.top.Color = color or self.options.nameColor;
                 objects.top.Text = player.Name;
