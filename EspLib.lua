@@ -40,7 +40,6 @@ local espLibrary = {
         outOfViewArrowsOutlineColor = Color3.new(1, 1, 1),
         outOfViewArrowsOutlineTransparency = 1,
         names = false,
-        namesoutline = true,
         nameTransparency = 1,
         nameColor = Color3.new(1, 1, 1),
         boxes = false,
@@ -483,7 +482,6 @@ function espLibrary:Load(renderValue)
                 objects.top.Visible = show and self.options.names;
                 objects.top.Font = self.options.font;
                 objects.top.Size = self.options.fontSize;
-                objects.top.Outline = self.options.namesoutline;
                 objects.top.Transparency = self.options.nameTransparency;
                 objects.top.Color = color or self.options.nameColor;
                 objects.top.Text = player.Name;
